@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -58,18 +58,19 @@
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html?#planes">Planes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./representantes.html"
+                      >Representantes</a
+                    >
                   </li>                  
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Planes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Representantes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Prestadores</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Info Saludable</a>
+                    <a class="nav-link" href="./infoSaludable.html"
+                      >Info Saludable</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a
@@ -78,7 +79,7 @@
                       href="#"
                       >Contacto</a
                     >
-                  </li>                  
+                  </li>
                 </ul>
               </div>
             </div>
@@ -90,180 +91,161 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO SECTION -->
-    <section class="container">
-      <div class="row d-none d-md-flex">
-        <div class="col-12">        
-          <div
-            id="carouselExampleCaptions"
-            class="carousel slide"
-            data-bs-ride="carousel"
+    <section class="container-fluid align-content-center">
+      <div class="row">
+        <!-- DIV AGREGADO PARA EVITAR QUE EL NAV TAPE EL CONTENIDO -->
+        <div class="col-12" style="height: 5rem"></div>
+
+        <!-- INICIO REPRESENTANTES -->
+        <div class="col-12">
+          <h1
+            class="text-center py-4 verdeSimepa"
+            style="color: white; height: 100%"
           >
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#carouselExampleCaptions"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="./assets/img/5bd3730bd29c2_prepagas..jpg"
-                  class="d-block w-200 img-fluid"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block text-dark">
-                  <h5>First slide label</h5>
-                  <p>
-                    Con atención personalizada e integral, aseguramos una efectiva
-                    respuesta a todas las necesidades de nuestros afiliados.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/5bd3730bd29c2_prepagas..jpg"
-                  class="d-block w-200 img-fluid"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block text-dark">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Nuestra propuesta es el equilibrio justo entre a la excelencia médica,
-                    prestación de servicio y costo.
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="./assets/img/5bd3730bd29c2_prepagas..jpg"
-                  class="d-block w-200 img-fluid"
-                  alt="..."
-                />
-                <div class="carousel-caption d-none d-md-block text-dark">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Así,como hace más de 30 años, día a día trabajamos en pos de seguir ofreciendo el 
-                    mejor servicio y calidad asistencial para el cuidado de la salud de quienes confían
-                    en nosotros.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>        
+            CONTACTANOS
+          </h1>
         </div>
-        
-        
-
-
-      </section>
-      <!-- FIN SECTION -->
-
-      
-    <!-- FOOTER -->
-    <!--<div class="row">
-      <div class="col-12">
-        <footer>
+        <!-- INICIO FORMULARIO DE CONTACTO -->
+        <div class="container">
           <div class="row">
-            <div class="col-1">
-              <i
-                class="fab fa-facebook-square fa-lg fa-pulse"
-                style="color: dodgerblue"
-              ></i>
-            </div>
-            <div class="col 4 align-content-left">
-              <h6>www.facebook.com</h6>
-            </div>
-            <div class="col-1">
-              <a href="https://www.facebook.com"
-                ><i
-                  class="fab fa-facebook-square fa-lg"
-                  style="font-size: 3em; color: dodgerblue"
-                ></i>
-              </a>
+            <div class="col-md-12">
+              <div class="well well-sm">
+                <form class="form-horizontal py-4" method="post">
+                  <fieldset>
+                    
+                    <div class="form-group">                      
+                      <div class="col-md-8 py-2">
+                        <input
+                          id="fname"
+                          name="name"
+                          type="text"
+                          placeholder="Nombre"
+                          class="form-control" required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">                      
+                      <div class="col-md-8 py-2">
+                        <input
+                          id="lname"
+                          name="name"
+                          type="text"
+                          placeholder="Apellido"
+                          class="form-control" required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">                      
+                      <div class="col-md-8 py-2">
+                        <input
+                          id="email"
+                          name="email"
+                          type="text"
+                          placeholder="Correo Electrónico"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">                      
+                      <div class="col-md-8 py-2">
+                        <input
+                          id="phone"
+                          name="phone"
+                          type="text"
+                          placeholder="Teléfono"
+                          class="form-control" required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">                     
+                      <div class="col-md-8 py-2">
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          placeholder="Escriba su consulta aquí. Nos comunicaremos a la brevedad posible."
+                          rows="7"
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="col-md-12 text-center py-2">
+                        <button type="submit" class="btn btn-primary btn-lg" data-target="#formModal">
+                          Enviar
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
             </div>
           </div>
-        </footer>
+        </div>
       </div>
-      <div class="col-12">
-        <footer>
-          <div class="row">
-            <div class="col-1">
-              <i
-                class="fab fa-facebook-square fa-spin"
-                style="font-size: 2rem; color: dodgerblue"
-              ></i>
-            </div>
-            <div class="col 4 align-content-center">
-              <h6>www.facebook.com</h6>
-              <span class="fa-stack fa-2x">
-                <i class="fab fa-facebook-square fa-stack-1x"></i>
-                <i class="fas fa-ban fa-stack-2x" style="color: tomato"></i>
-              </span>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </div>
+      <!-- FIN FORMULARIO DE CONTACTO -->
+    </section>
+    <!-- FIN SECTION -->
 
-    <!-->
-    <!--<div class="container-fluid">
-        <div class="row">
-            <div class="col">Header</div>
+    <!-- INICIO FOOTER -->
+    <footer class="container-fluid bg-dark">
+      <div class="row align-items-center p-4">
+        <div class="col-3 text-center">
+          <a href="https://www.facebook.com/Simepa-494047780744690/">
+            <i
+              class="fab fa-facebook-square"
+              style="color: #00994c; font-size: 4rem"
+            ></i>
+          </a>
         </div>
-        <div class="row">
-            <div class="col-3">Col1</div>
-            <div class="col">Col2</div>
+        <div class="col-3 text-center">
+          <a href="https://www.instagram.com/si.me.pa/">
+            <i
+              class="fab fa-instagram"
+              style="color: #00994c; font-size: 4rem"
+            ></i>
+          </a>
         </div>
-        <div class="row">
-            <div class="col">Footer</div>
+        <div class="col-3 text-center">
+          <a href="https://api.whatsapp.com/send?phone=542954828553">
+            <i
+              class="fab fa-whatsapp-square"
+              style="color: #00994c; font-size: 4rem"
+            ></i>
+          </a>
         </div>
-    </div>
-    -->
+        <div class="col-3 text-center">
+          <a href="https://www.simepa.com.ar/">
+            <i class="fas fa-globe" style="color: #00994c; font-size: 4rem"></i>
+          </a>
+        </div>
+      </div>
+      <div class="col-12 text-center text-white py-2" style="width: 100%">
+        <p class="h5">Sistéma Médico Pampeano</p>
+        <p class="h6">Av. San Martin N° 655 - Santa Rosa - La Pampa</p>
+      </div>
+    </footer>
+    <!-- FIN FOOTER -->
 
     <!-- BOOTSTRAP JS -->
     <script
       type="text/javascript"
       src="./assets/js/bootstrap.bundle.min.js"
+
+
+      const openEls = document.querySelectorAll("[data-open]");
+      const isVisible = "is-visible";
+
+      for(const el of openEls) {
+        el.addEventListener("click", function() {
+          const modalId = this.dataset.open;
+          document.getElementById(modalId).classList.add(isVisible);
+        });
+      }
     ></script>
     <!-- MATERIAL DESIGN BOOTSTRAP JS -->
     <!--<script type="text/javascript" src="./assets/js/mdb.min.js"></script>-->

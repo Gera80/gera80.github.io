@@ -1,3 +1,15 @@
-.planes, .footer {
+.verdeSimepa {
   background: #00994C;
+}
+
+.textoVerde {
+  color: #00994C;
+}
+
+.info {
+  width: 18rem;
+  height: 18rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
