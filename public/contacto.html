@@ -24,17 +24,17 @@
     <!--<link rel="stylesheet" href="./assets/css/mdb.min.css" />-->
   </head>
 
-  <body class="container-fluid">
+  <body>
     <!-- INICIO HEADER -->
     <header>
-      <div class="row">
+      <div class="row container-fluid">
         <div class="col">
           <!-- INICIO NAVBAR -->
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
               <img
                 src="./../assets/img/logo Simepa 2500x800.png"
-                alt=""
+                alt="Logo"
                 width="200"
                 class="img-fluid"
               />
@@ -89,11 +89,10 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO SECTION -->
-    <section class="container-fluid align-content-center">
+    <section>
       <div class="row">
         <!-- DIV AGREGADO PARA EVITAR QUE EL NAV TAPE EL CONTENIDO -->
         <div class="col-12" style="height: 5rem"></div>
-
         <!-- INICIO REPRESENTANTES -->
         <div class="col-12">
           <h1
@@ -104,15 +103,16 @@
           </h1>
         </div>
         <!-- INICIO FORMULARIO DE CONTACTO -->
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="well well-sm">
+        <div>
+          <div class="row container-fluid">
+            <div class="col-md-7">              
+              <div class="well well-sm">                
                 <form class="form-horizontal py-4" method="post">
                   <fieldset>
+                    <h4 class="mx-4 textoVerde">Dejanos tu consulta!</h4>                    
                     
-                    <div class="form-group">                      
-                      <div class="col-md-8 py-2">
+                    <div class="row form-group d-md-flex">
+                      <div class="col-12 col-md-6 py-2">
                         <input
                           id="fname"
                           name="name"
@@ -121,9 +121,7 @@
                           class="form-control" required
                         />
                       </div>
-                    </div>
-                    <div class="form-group">                      
-                      <div class="col-md-8 py-2">
+                      <div class="col-12 col-md-6 py-2 ">
                         <input
                           id="lname"
                           name="name"
@@ -132,102 +130,169 @@
                           class="form-control" required
                         />
                       </div>
-                    </div>
+                    </div>                  
 
-                    <div class="form-group">                      
-                      <div class="col-md-8 py-2">
-                        <input
-                          id="email"
-                          name="email"
-                          type="text"
-                          placeholder="Correo Electrónico"
-                          class="form-control"
-                        />
-                      </div>
+                  <div class="row form-group d-md-flex">                      
+                    <div class="col-12 col-md-8 py-2">
+                      <input
+                        id="email"
+                        name="email"
+                        type="text"
+                        placeholder="Correo Electrónico"
+                        class="form-control"
+                      />
                     </div>
+                    <div class="col-12 col-md-4 py-2">
+                      <input
+                        id="phone"
+                        name="phone"
+                        type="text"
+                        placeholder="Teléfono"
+                        class="form-control" required
+                      />
+                    </div>
+                  </div>
 
-                    <div class="form-group">                      
-                      <div class="col-md-8 py-2">
-                        <input
-                          id="phone"
-                          name="phone"
-                          type="text"
-                          placeholder="Teléfono"
-                          class="form-control" required
-                        />
-                      </div>
+                  <div class="form-group">                     
+                    <div class="col-12 py-2">
+                      <textarea
+                        class="form-control"
+                        id="message"
+                        name="message"
+                        placeholder="Escriba su consulta aquí. Nos comunicaremos a la brevedad posible."
+                        rows="7"
+                      ></textarea>
                     </div>
+                  </div>
 
-                    <div class="form-group">                     
-                      <div class="col-md-8 py-2">
-                        <textarea
-                          class="form-control"
-                          id="message"
-                          name="message"
-                          placeholder="Escriba su consulta aquí. Nos comunicaremos a la brevedad posible."
-                          rows="7"
-                        ></textarea>
-                      </div>
+                  <div class="form-group">
+                    <div class="col-12 text-center py-2">
+                      <button type="submit" class="btn btn-primary btn-lg" data-target="#formModal">
+                        Enviar
+                      </button>
+                      
                     </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
 
-                    <div class="form-group">
-                      <div class="col-md-12 text-center py-2">
-                        <button type="submit" class="btn btn-primary btn-lg" data-target="#formModal">
-                          Enviar
-                        </button>
-                        
-                      </div>
-                    </div>
-                  </fieldset>
-                </form>
+          <div class="col-md-5 px-4">              
+            <div class="row py-2">
+              <div class="col-12">
+                <h4 class="mx-4 textoVerde">Datos útiles</h4>  
+                <div class="row">
+                  <div class="col-12">
+                    <em>
+                      <strong>
+                        <h6 class="m-2">Urgencias:</h6>
+                      </strong>
+                    </em>                    
+                  </div>
+                  <div class="col-12 px-5 d-flex align-items-center">
+                    <i
+                      class="fab fa-whatsapp-square"
+                      style="color: #00994C; font-size: 2rem"
+                    ></i>
+                    <a href="https://api.whatsapp.com/send?phone=542954549110">
+                      <h6 class="m-2">(02954) 15549110</h6>
+                    </a>                    
+                  </div>                  
+                </div>
+
+                <div class="row">
+                  <div class="col-12">
+                    <em>
+                      <strong>
+                        <h6 class="m-2">Autorizaciones de Prestaciones:</h6>
+                      </strong>
+                    </em>
+                  </div>
+                  <div class="col-12 px-5 d-flex align-items-center">                    
+                    <i
+                      class="fab fa-whatsapp-square"
+                      style="color: #00994C; font-size: 2rem"
+                    ></i>
+                    <a href="https://api.whatsapp.com/send?phone=542954828553">
+                      <h6 class="m-2">(02954) 15828553</h6>
+                    </a>                    
+                  </div>                  
+                </div>
+
+                <div class="row">
+                  <div class="col-12"><em>
+                    <strong>
+                      <h6 class="m-2">Medicamentos:</h6>
+                    </strong>
+                  </em></div>
+                  <div class="col-12 px-5 d-flex align-items-center">                    
+                    <i
+                      class="fab fa-whatsapp-square"
+                      style="color: #00994C; font-size: 2rem"
+                    ></i>
+                    <a href="https://api.whatsapp.com/send?phone=542954828552">
+                      <h6 class="m-2">(02954) 15828552</h6>
+                    </a>                    
+                  </div>
+                </div>
+                
+                <h4 class="my-4 mx-4 textoVerde">No sabes como llegar?</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d800.5572141297158!2d-64.28319347078445!3d-36.620877522378095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c2cdaa20b16b77%3A0xfebac71defeed052!2sSimepa%20-%20Sistema%20Medico%20Pampeano!5e0!3m2!1ses!2sar!4v1637331048516!5m2!1ses!2sar" width="600" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- FIN FORMULARIO DE CONTACTO -->
+        </div>       
+    </div>      
+    <!-- FIN FORMULARIO DE CONTACTO -->
     </section>
     <!-- FIN SECTION -->
 
     <!-- INICIO FOOTER -->
-    <footer class="container-fluid bg-dark">
-      <div class="row align-items-center p-4">
-        <div class="col-3 text-center">
-          <a href="https://www.facebook.com/Simepa-494047780744690/">
-            <i
-              class="fab fa-facebook-square"
-              style="color: #00994c; font-size: 4rem"
-            ></i>
-          </a>
-        </div>
-        <div class="col-3 text-center">
-          <a href="https://www.instagram.com/si.me.pa/">
-            <i
-              class="fab fa-instagram"
-              style="color: #00994c; font-size: 4rem"
-            ></i>
-          </a>
-        </div>
-        <div class="col-3 text-center">
-          <a href="https://api.whatsapp.com/send?phone=542954828553">
-            <i
-              class="fab fa-whatsapp-square"
-              style="color: #00994c; font-size: 4rem"
-            ></i>
-          </a>
-        </div>
-        <div class="col-3 text-center">
-          <a href="https://www.simepa.com.ar/">
-            <i class="fas fa-map-marked-alt" style="color: #00994c; font-size: 4rem"></i>
-          </a>
-        </div>
+    <footer class="bg-dark">
+      <div class="row pb-2 pt-3">
+        <div class="col-12 text-center">
+          <span class="mx-4">
+            <a href="https://www.facebook.com/Simepa-494047780744690/">
+              <i
+                class="fab fa-facebook-square"
+                style="color: #00994C; font-size: 3rem"
+              ></i>
+            </a>
+          </span>
+          <span class="mx-4">
+            <a href="https://www.instagram.com/si.me.pa/">
+              <i
+                class="fab fa-instagram"
+                style="color: #00994C; font-size: 3rem"
+              ></i>
+            </a>
+          </span>
+          <span class="mx-4">
+            <a href="https://api.whatsapp.com/send?phone=542954828553">
+              <i
+                class="fab fa-whatsapp-square"
+                style="color: #00994C; font-size: 3rem"
+              ></i>
+            </a>
+          </span>
+          <span class="mx-4">
+            <a href="https://www.simepa.com.ar/">
+              <i
+                class="fas fa-map-marked-alt"
+                style="color: #00994C; font-size: 3rem"
+              ></i>
+            </a>
+          </span> 
+        </div>          
       </div>
-      <div class="col-12 text-center text-white py-2" style="width: 100%">
+      <div class="col-12 text-center text-white py-2" style="width: 100%;">
         <p class="h5">Sistéma Médico Pampeano</p>
-        <p class="h6">Av. San Martin N° 655 - Santa Rosa - La Pampa</p>
-      </div>
+        <p class="h6">Av. San Martin N° 655 - Santa Rosa - La Pampa</p>          
+      </div>              
     </footer>
-    <!-- FIN FOOTER -->
+  <!-- FIN FOOTER -->
 
     <!-- BOOTSTRAP JS -->
     <script
