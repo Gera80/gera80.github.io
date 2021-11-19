@@ -10,33 +10,39 @@
     <link rel="icon" href="#" type="image/x-icon" />
     <!-- FONT AWESOME -->
     <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    />
-    <!-- GOOGLE FONTS ROBOTO -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-    />
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"/>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- BOOTSTRAP CSS -->
     <link rel="stylesheet" href="./../assets/css/bootstrap.min.css" />
     <!-- CSS PROPIO -->
     <link rel="stylesheet" href="./../assets/css/estilo.min.css" />
+    <!-- ANIMATE CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- WOW CSS -->
+    <link
+    rel="stylesheet"
+    href="./assets/css/animate.css"/>
     <!-- MATERIAL DESIGN BOOTSTRAP CSS -->
     <!--<link rel="stylesheet" href="./assets/css/mdb.min.css" />-->
   </head>
 
-  <body class="container-fluid">
+  <body>
     <!-- INICIO HEADER -->
     <header>
-      <div class="row">
+      <div class="row container-fluid">
         <div class="col">
           <!-- INICIO NAVBAR -->
-          <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
               <img
                 src="./../assets/img/logo Simepa 2500x800.png"
-                alt=""
+                alt="Logo"
                 width="200"
                 class="img-fluid"
               />
@@ -90,29 +96,30 @@
     <!-- FIN HEADER -->
 
     <!-- INICIO SECTION -->
-    <section class="container-fluid align-content-center">
+    <section>
       <div class="row">
         <!-- DIV AGREGADO PARA EVITAR QUE EL NAV TAPE EL CONTENIDO -->
-        <div class="col-12" style="height: 5rem"></div>
-        
+        <div class="col-12" style="height: 5rem"></div>        
         <!-- INICIO INFO SALUDABLE -->        
         <div class="col-12">
-          <h1 class="text-center py-4 verdeSimepa" style="color: white;">INFORMACIÓN SALUDABLE</h1>
+          <h1 class="text-center py-2" id="bloqueTituloPagina">Información Saludable</h1>
         </div>
-        <div class="row container align-items-md-start p-3">
-          <div class="col-12 col-md-4 text-center py-4 align-self-md-center ">
-            <div class="card" style="width: 22rem; height:50%">
-                <img src="./../assets/img/breast_cancer_awareness_month.jpg" class="card-img-top img-fluid info" style="height: 100%;" alt="...">
+
+        <div class="row mx-2">
+          <div class="col-12 col-md-6 col-xl-4 col-xxl-3 text-center py-4 animate__animated animate__fadeInUp wow">
+            <div class="card" style="width: 20rem; height:100%">
+                <img src="./../assets/img/breast_cancer_awareness_month.jpg" class="card-img-top img-fluid imageCard" alt="moño rosa">
                 <div class="card-body"> 
-                  <h5 class="card-title">Auto examen y control de mamas, la importancia de la detección precoz</h5>
+                  <h5 class="card-title text-center">Auto examen y control de mamas, la importancia de la detección precoz</h5>
                   <p class="card-text">En nuestro país se diagnostican entre 15 y 18 mil  nuevos casos de cáncer de mama por año y 1 de cada 8 mujeres podría llegar a padecerlo. Pero los porcentajes de curación total son cada vez más elevados; la clave está en el diagnóstico temprano.</p>
-                  <a href="./cancer.html" class="btn btn-primary">LEER MÁS</a>
+                  <a href="./cancer.html" class="btn btn-primary btn-lg">LEER MÁS</a>
                 </div>
               </div>
           </div>
-          <div class="col-12 col-md-4 text-center py-4">
-            <div class="card" style="width: 22rem; height:50%">
-                <img src="./../assets/img/wash-hands.jpg" class="card-img-top img-fluid info" style="height: 100%;" alt="...">
+
+          <div class="col-12 col-md-6 col-xl-4 col-xxl-3 text-center py-4 animate__animated animate__fadeInUp wow">
+            <div class="card" style="width: 50%; height:50%">
+                <img src="./../assets/img/wash-hands.jpg" class="card-img-top img-fluid info" style="height: auto;" alt="...">
                 <div class="card-body"> 
                   <h5 class="card-title">Parásitos, ¡afuera!</h5>
                   <p class="card-text">La desparasitazación ejerce un gran impacto en la calidad de vida de los niños. Cuidémoslos previniendo.</p>
@@ -120,16 +127,26 @@
                 </div>
               </div>
           </div>
-          <div class="col-12 col-md-4 text-center py-4">
-            <div class="card" style="width: 22rem; height:50%">
-                <img src="./../assets/img/happy_pills.jpg" class="card-img-top img-fluid info" style="height: 100%;" alt="...">
+          <div class="col-12 col-md-6 col-xl-4 col-xxl-3 text-center py-4 animate__animated animate__fadeInUp wow">
+            <div class="card" style="width: 50%m; height:50%">
+                <img src="./../assets/img/happy_pills.jpg" class="card-img-top img-fluid info" style="height: auto;" alt="...">
                 <div class="card-body"> 
                   <h5 class="card-title">Prevención de las intoxicaciones en el hogar</h5>
                   <p class="card-text">Dentro de las consultas toxicológicas, más de la mitad son pediátricas. Además, la gran mayoría de las intoxicaciones ocurren en edades donde los niños son más vulnerables e incapaces de tomar conciencia de los peligros.</p>
                   <a href="#" class="btn btn-primary">LEER MÁS</a>
                 </div>
               </div>
-          </div>                  
+          </div>  
+          <div class="col-12 col-md-6 col-xl-4 col-xxl-3 text-center py-4 animate__animated animate__fadeInUp wow">
+            <div class="card" style="width: 22rem; height:50%">
+                <img src="./../assets/img/happy_pills.jpg" class="card-img-top img-fluid info" style="height: auto;" alt="...">
+                <div class="card-body"> 
+                  <h5 class="card-title">Prevención de las intoxicaciones en el hogar</h5>
+                  <p class="card-text">Dentro de las consultas toxicológicas, más de la mitad son pediátricas. Además, la gran mayoría de las intoxicaciones ocurren en edades donde los niños son más vulnerables e incapaces de tomar conciencia de los peligros.</p>
+                  <a href="#" class="btn btn-primary">LEER MÁS</a>
+                </div>
+              </div>
+          </div>                                  
         </div>
       </section>
       <!-- FIN SECTION -->
@@ -164,7 +181,7 @@
           <div class="col-3 text-center">
             <a href="https://www.simepa.com.ar/">
               <i
-                class="fas fa-globe"
+                class="fas fa-map-marked-alt"
                 style="color: #00994C; font-size: 4rem"
               ></i>
             </a>
@@ -182,6 +199,14 @@
       type="text/javascript"
       src="./assets/js/bootstrap.bundle.min.js"
     ></script>
+    <!-- WOW JS -->
+    <script
+      type="text/javascript"
+      src="./assets/js/wow.min.js"
+    ></script>
+    <script>
+      new WOW().init();
+      </script>
     <!-- MATERIAL DESIGN BOOTSTRAP JS -->
     <!--<script type="text/javascript" src="./assets/js/mdb.min.js"></script>-->
   </body>

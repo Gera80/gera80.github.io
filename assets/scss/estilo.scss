@@ -1,13 +1,24 @@
-$color: #00994C;
+$colorVerde: #00994C;
+$colorBlanco: white;
 
-.verdeSimepa{
-    background: $color;            
+html{
+    font-family: Roboto, Cantarell, Oxygen, Ubuntu, sans-serif;    
+}
+.fondoVerde{
+    background: $colorVerde;            
 }
 .textoVerde{
-    color: $color;
+    color: $colorVerde;
 }
-.info{
+.imageCard{
     width: 18rem;
     height: 18rem;
     align-self: center;
+}
+a{
+    font-weight: bold;
+}
+#bloqueTituloPagina{
+    color: $colorBlanco;
+    background: $colorVerde;
 }
